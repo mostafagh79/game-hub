@@ -14,7 +14,7 @@ const GameCard = ({game}: TGameCardProps) => {
         <Heading fontSize="xl">
           {game.name}
         </Heading> 
-        <HStack justifyContent="space-between">
+        <HStack flexWrap="wrap" justifyContent="space-between">
         <PlatformIconList platforms={game.parent_platforms.map(p=>p.platform)}/>
         <CriticScore score={game.metacritic}/>
         </HStack>
