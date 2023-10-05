@@ -8,7 +8,7 @@ interface TGameCardProps {
 }
 const GameCard = ({game}: TGameCardProps) => {
   return (
-    <Card  borderRadius={10} overflow={"hidden"}>
+    <Card borderRadius={10} overflow={"hidden"}>
       <Image src={game.background_image}/>
       <CardBody>
         <Heading fontSize="xl">
