@@ -20,12 +20,12 @@ const SortSelector = ({onSelectSortOrder ,sortOrder}:TSortSelectorProps) => {
   return (
     <Menu>
       <MenuButton rightIcon={<BsChevronDown />} as={Button}>
-        {currentSortOrder?.label || "Relavance"}
+      Sort By :  {currentSortOrder?.label || "Relavance"}
       </MenuButton>
       <MenuList>
         {sortOrders.map((order) => (
           <MenuItem onClick={()=>onSelectSortOrder(order.value)} key={order.value} value={order.value}>
-          {order.label}
+           {order.label}
           </MenuItem>
         ))}
       </MenuList>
