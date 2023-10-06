@@ -12,7 +12,7 @@ const GameCard = ({game}: TGameCardProps) => {
   return (
     <Card borderRadius={10} overflow={"hidden"}>
       <Image src={game.background_image ?? noImage}/>
-      <CardBody>
+      <CardBody _light={{backgroundColor:"gray.300"}}>
         <Heading fontSize="xl">
           {game.name}
         </Heading> 

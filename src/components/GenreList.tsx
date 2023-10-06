@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   Spinner,
+  color,
 } from "@chakra-ui/react";
 import useGenre, { Genre } from "../hooks/useGenere";
 
@@ -31,6 +32,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: TGenreListProps) => {
               src={genre.image_background}
             />
             <Button
+            _light={{color : "black"}}
             textAlign="left"
             whiteSpace="normal"
               fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
