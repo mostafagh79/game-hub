@@ -22,6 +22,7 @@ cd game-hub
 **Install the Packages** : 
 ```bash
 npm i
+npm i axios
 ```
 
 **Run the project** :
