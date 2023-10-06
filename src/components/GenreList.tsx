@@ -28,6 +28,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: TGenreListProps) => {
               src={genre.image_background}
             />
             <Button
+            whiteSpace="normal"
               fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
               sx={{ textOverflow: "hidden" }}
               onClick={() => onSelectGenre(genre)}
