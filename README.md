@@ -31,3 +31,5 @@ npm run dev
 ```
 
 Now open project in your browser.
+
+**Note** : Turn on your vpn to load the page!
